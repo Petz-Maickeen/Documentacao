@@ -1,0 +1,32 @@
+version: "3.9"
+services:
+  cliente:
+    build: ./cliente
+    ports:
+      - "8080:8080"
+    env_file:
+      - bd.env
+  address:
+    build: ./address
+    ports:
+      - "8081:8080"
+    env_file:
+      - bd.env
+  phone:
+    build: ./phone
+    ports:
+      - "8082:8080"
+    env_file:
+      - bd.env
+  email:
+    build: ./email
+    ports:
+      - "8083:8080"
+    env_file:
+      - bd.env
+  pet:
+    build: ./pet
+    ports:
+      - "8084:8080"
+    env_file:
+      - bd.env
