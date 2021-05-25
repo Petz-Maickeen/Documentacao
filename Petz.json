@@ -1,0 +1,535 @@
+{
+	"info": {
+		"_postman_id": "c889f150-864b-4ebf-bb2e-b969310a035d",
+		"name": "Petz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "Relacionamento",
+					"item": [
+						{
+							"name": "Email",
+							"item": [
+								{
+									"name": "Find Email",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{URL}}/cliente/487605e7-1b1a-4e06-86ac-40a0c392cff9/email",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"cliente",
+												"487605e7-1b1a-4e06-86ac-40a0c392cff9",
+												"email"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Insert Email",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"email\": \"testas2@teste.com\",\r\n    \"principal\": \"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/cliente/487605e7-1b1a-4e06-86ac-40a0c392cff9/email",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"cliente",
+												"487605e7-1b1a-4e06-86ac-40a0c392cff9",
+												"email"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Email",
+									"request": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"email\": \"testa3@teste.com\",\r\n    \"principal\": \"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/cliente/487605e7-1b1a-4e06-86ac-40a0c392cff9/email/testa2@teste.com",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"cliente",
+												"487605e7-1b1a-4e06-86ac-40a0c392cff9",
+												"email",
+												"testa2@teste.com"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete Email",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{URL}}/cliente/487605e7-1b1a-4e06-86ac-40a0c392cff9/email/teste@teste.com",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"cliente",
+												"487605e7-1b1a-4e06-86ac-40a0c392cff9",
+												"email",
+												"teste@teste.com"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Phone",
+							"item": [
+								{
+									"name": "Find Phone",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{URL}}/cliente/7b5b76d1-14dc-4ecc-8605-0e0b206beb6a/phone",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"cliente",
+												"7b5b76d1-14dc-4ecc-8605-0e0b206beb6a",
+												"phone"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Insert Phone",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"ddi\": \"+55\",\r\n    \"ddd\": \"011\",\r\n    \"telefone\": \"963269290\",\r\n    \"principal\": \"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/cliente/7b5b76d1-14dc-4ecc-8605-0e0b206beb6a/phone",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"cliente",
+												"7b5b76d1-14dc-4ecc-8605-0e0b206beb6a",
+												"phone"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Phone",
+									"request": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"ddi\": \"+55\",\r\n    \"ddd\": \"019\",\r\n    \"telefone\": \"963269290\",\r\n    \"principal\": \"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/cliente/7b5b76d1-14dc-4ecc-8605-0e0b206beb6a/phone",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"cliente",
+												"7b5b76d1-14dc-4ecc-8605-0e0b206beb6a",
+												"phone"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete Phone",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{URL}}/cliente/7b5b76d1-14dc-4ecc-8605-0e0b206beb6a/phone/963269290",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"cliente",
+												"7b5b76d1-14dc-4ecc-8605-0e0b206beb6a",
+												"phone",
+												"963269290"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Adress",
+							"item": [
+								{
+									"name": "Find Address",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{URL}}/cliente/7b5b76d1-14dc-4ecc-8605-0e0b206beb6a/endereco",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"cliente",
+												"7b5b76d1-14dc-4ecc-8605-0e0b206beb6a",
+												"endereco"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Insert Address",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"logradouro\": \"Rua Ezequiel Ramos\",\r\n    \"numero\": \"191\",\r\n    \"bairro\": \"Mooca\",\r\n    \"estado\": \"São Paulo\",\r\n    \"pais\": \"Brasil\",\r\n    \"cep\": \"03111-030\",\r\n    \"principal\": \"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/cliente/7b5b76d1-14dc-4ecc-8605-0e0b206beb6a/endereco",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"cliente",
+												"7b5b76d1-14dc-4ecc-8605-0e0b206beb6a",
+												"endereco"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Address",
+									"request": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"cep\": \"03111-030\",\r\n    \"logradouro\": \"Rua Ezequiel Ramos\",\r\n    \"numero\": 192,\r\n    \"bairro\": \"Mooca\",\r\n    \"estado\": \"São Paulo\",\r\n    \"pais\": \"Brasil\",\r\n    \"principal\": \"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/cliente/7b5b76d1-14dc-4ecc-8605-0e0b206beb6a/endereco",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"cliente",
+												"7b5b76d1-14dc-4ecc-8605-0e0b206beb6a",
+												"endereco"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete Address",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{URL}}/cliente/7b5b76d1-14dc-4ecc-8605-0e0b206beb6a/endereco/03111-030",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"cliente",
+												"7b5b76d1-14dc-4ecc-8605-0e0b206beb6a",
+												"endereco",
+												"03111-030"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Find Client",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/cliente/487605e7-1b1a-4e06-86ac-40a0c392cff9",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cliente",
+								"487605e7-1b1a-4e06-86ac-40a0c392cff9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Gabriel Ueti Amaro\",\r\n    \"idade\": 23,\r\n    \"genero\": \"Masculino\",\r\n    \"cpf\": \"42201678891\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/cliente",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Client",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Gabriel Ueti Amaro\",\r\n    \"idade\": 24,\r\n    \"genero\": \"Masculino\",\r\n    \"cpf\": \"42201678891\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/cliente/7b5b76d1-14dc-4ecc-8605-0e0b206beb6a",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cliente",
+								"7b5b76d1-14dc-4ecc-8605-0e0b206beb6a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Client",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/cliente/487605e7-1b1a-4e06-86ac-40a0c392cff9/pet/55250ffc-aeda-4bf0-a343-655473695ef2",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cliente",
+								"487605e7-1b1a-4e06-86ac-40a0c392cff9",
+								"pet",
+								"55250ffc-aeda-4bf0-a343-655473695ef2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Id Cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/cliente?cpf=42201678891",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cliente"
+							],
+							"query": [
+								{
+									"key": "cpf",
+									"value": "42201678891"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pet",
+			"item": [
+				{
+					"name": "Find Pet",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/cliente/487605e7-1b1a-4e06-86ac-40a0c392cff9/pet/55250ffc-aeda-4bf0-a343-655473695ef2",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cliente",
+								"487605e7-1b1a-4e06-86ac-40a0c392cff9",
+								"pet",
+								"55250ffc-aeda-4bf0-a343-655473695ef2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Pet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": 23,\r\n    \"raca\": \"SRD\",\r\n    \"cor\": \"Caramelo\",\r\n    \"idade\": 3,\r\n    \"peso\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/cliente/487605e7-1b1a-4e06-86ac-40a0c392cff9/pet/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cliente",
+								"487605e7-1b1a-4e06-86ac-40a0c392cff9",
+								"pet",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": 23,\r\n    \"raca\": \"Pit Bull\",\r\n    \"cor\": \"Caramelo\",\r\n    \"idade\": 3,\r\n    \"peso\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/cliente/487605e7-1b1a-4e06-86ac-40a0c392cff9/pet/55250ffc-aeda-4bf0-a343-655473695ef2",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cliente",
+								"487605e7-1b1a-4e06-86ac-40a0c392cff9",
+								"pet",
+								"55250ffc-aeda-4bf0-a343-655473695ef2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Pet",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/pet/db2bec33-ffa6-4de3-b625-bab51ed3d894",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"pet",
+								"db2bec33-ffa6-4de3-b625-bab51ed3d894"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
