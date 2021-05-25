@@ -9,10 +9,15 @@ Executar o comando "mvn install" para criar o arquivo .jar no diretório, dentro
 Executar o comando "docker up" para gerar e executar as imagens Docker de cada aplicação.
 
 Segue mapa das portas:
+
   Cliente     -> 8080
+  
   Endereceço  -> 8081
+  
   Telefone    -> 8082
+  
   Email       -> 8083
+  
   Pet         -> 8084
 
 Para chamar cada API, basta ir no endpoint localhost:@porta, conforme descrito acima. Deixei uma collection do postman pronta para teste das API's, conforme arquivo Petz.json.
